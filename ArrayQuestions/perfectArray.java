@@ -1,3 +1,10 @@
+/*
+    Question => 
+    Given an array of size N and you have to tell whether the array is perfect or not.
+    An array is said to be perfect if its reverse array matches the original array.
+    If the array is perfect then return True else return False.
+*/
+
 // Brute Force Unoptimized Solution
 public static void perfectArr(int arr[]){
     int len = arr.length;
