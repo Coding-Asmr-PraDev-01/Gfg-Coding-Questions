@@ -62,3 +62,25 @@ o/p : "efgkors"  -> Here though we can get output, order is altered.
 // Space Complexity : O(1) 
 
 // ----------------------------------------------------------------------------------------------------------
+
+// Approach - 3 -> Using Map
+public static String removDuplicates(String str){
+    char strCharArr[] = str.toCharArray();
+    StringBuilder resultStr = new StringBuilder();
+    HashMap<Character, Integer> hm = new HashMap<>();
+    for (char c : strCharArr) {
+        if (!hm.containsKey(c)) {
+            resultStr.append(c);
+            hm.put(c, 1);
+        }
+    }
+    return resultStr.toString();
+}
+
+/*
+i/p : "geeksforgeeks"
+o/p : "geksfor" 
+*/
+
+// Time Complexity :  O(n)
+// Space Complexity : O(n) 
